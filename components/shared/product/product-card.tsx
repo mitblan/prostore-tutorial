@@ -23,7 +23,7 @@ const ProductCard = ({ product }: { product: any }) => {
 					<h2 className='text-sm font-medium'>{product.name}</h2>
 				</Link>
 				<div className='flex-between gap-4'>
-					<p>{product.rating} Stars</p>
+					<p>{product.rating.toString()} Stars</p>
 					{product.stock > 0 ? (
 						<ProductPrice value={Number(product.price)} />
 					) : (
